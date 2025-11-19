@@ -8,13 +8,15 @@ scene.add( cube );
 
 camera.position.z = 5;
 const canvas = document.querySelector('#draw');
-const renderer = new THREE.WebGLRenderer({canvas});
+const renderer = new THREE.WebGLRenderer({canvas,antialias:true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 
-
+// let clock = new THREE.Clock();
 function animate() {
   window.requestAnimationFrame( animate );
   renderer.render( scene, camera );
+  // cube.rotation.x= clock.getElapsedTime()*7;
+  // cube.rotation.y= clock.getElapsedTime()*7;
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
 }
