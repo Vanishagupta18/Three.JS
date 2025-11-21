@@ -3,7 +3,6 @@ html,body,#root {
   height: 100%;
  
 }
-#root { 
-  position: fixed;
+#root {
   background-color: rgb(0, 0, 0);
 }
