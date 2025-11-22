@@ -9,7 +9,7 @@ import { Bloom, EffectComposer, ToneMapping } from '@react-three/postprocessing'
 function App() {
   return (
     <>
-      <Canvas flat camera={{fov:35}}>
+      <Canvas flat camera={{fov:30}}>
         <OrbitControls/>
         <ambientLight/>
         <Cyl/>
@@ -24,7 +24,7 @@ function App() {
         </EffectComposer>
        </Canvas>
        <div className="w-full bg-black py-32">
-        <h1>Welcome to my Portfolio</h1>
+        <h1 className='text-white'>Welcome to my Portfolio</h1>
        </div>
 </>
   )
